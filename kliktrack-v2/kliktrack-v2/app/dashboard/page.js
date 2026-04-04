@@ -130,8 +130,7 @@ export default function Dashboard() {
   };
 
   const logout = () => {
-    document.cookie = 'kliktrack_auth=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-    window.location.reload();
+    window.location.href = '/api/logout';
   };
 
   if (loading) {
